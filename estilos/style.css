@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap");
+.p__nosotros {
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 630px) {
+  .nosotros__item1 {
+    grid-area: item1;
+  }
+  .nosotros__item2 {
+    grid-area: item2;
+  }
+  .nosotros__item3 {
+    grid-area: item3;
+  }
+  .p__nosotros {
+    margin-top: 30px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    grid-template-areas: "item1 item3" "item2 item3";
+  }
+}
+.productos {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 769px) {
+  .productos {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1025px) {
+  .div__grid {
+    width: 350px;
+    height: 550px;
+  }
+  .productos {
+    grid-template-columns: 1fr 11fr 1fr;
+  }
+}
+@media (min-width: 1200px) {
+  .div__grid {
+    width: 400px;
+    height: 550px;
+    margin-right: 45px;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: beige;
+  font-family: "Poppins";
+  font-weight: bolder;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 33, 3%);
+  min-height: 100vh;
+}
+
+header {
+  background-color: rgb(241, 241, 180);
+}
+
+.logoNav {
+  width: 30px;
+  height: 30px;
+}
+
+li {
+  list-style-type: none;
+  border: 3px solid #1F363D;
+}
+
+a {
+  color: #521A11;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 30px;
+  border-style: solid;
+  margin-top: 10px;
+}
+
+.h1 {
+  background-color: rgba(211, 78, 57, 0.7960784314);
+}
+
+.carritoNav {
+  justify-content: flex-end;
+}
+
+h2 {
+  border-style: solid;
+  padding: 5px;
+  margin: 10px;
+  background-color: rgba(211, 78, 57, 0.7960784314);
+}
+
+h3 {
+  font-size: 17px;
+  font-weight: bold;
+  background-color: rgba(238, 100, 79, 0.7960784314);
+  padding: 3px;
+  margin: 6px;
+  border-style: dotted;
+}
+
+.conteinerProductos {
+  background-color: rgb(241, 241, 180);
+}
+
+.compra {
+  background-color: rgb(241, 241, 180);
+}
+
+.imgCompra {
+  width: 24px;
+  height: 24px;
+}
+
+footer {
+  background-color: burlywood;
+}
+
+.redes {
+  background-color: burlywood;
+}
+
+.logo__nosotros {
+  margin-bottom: 10px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgb(2, 0, 36) 19%, rgb(121, 9, 41) 63%, rgb(0, 212, 255) 92%);
+}
+
+@media (min-width: 321px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-rows: 5% auto 7%;
+  }
+  .h1 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .productosDestacados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .redes {
+    display: flex;
+    justify-content: space-around;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,25 @@
+.productos{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+@media (min-width:769px){
+    .productos{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width:1025px){
+    .div__grid{
+        width: 350px;
+        height: 550px;
+    }
+    .productos{
+        grid-template-columns: 1fr 11fr 1fr
+    }
+}
+@media (min-width:1200px){
+    .div__grid{
+        width: 400px;
+        height: 550px;
+        margin-right: 45px;
+    }
+}

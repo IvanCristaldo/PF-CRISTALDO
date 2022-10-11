@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
-
+@import "nosotros";
+@import "contacto";
+@import "tienda";
 *{
     padding: 0;
     margin: 0;
@@ -17,7 +19,6 @@ body{
 header{
     background-color: rgb(241, 241, 180);
 }
-
 .logoNav{
     width: 30px;
     height: 30px;
@@ -36,6 +37,7 @@ a{
 h1{
     font-size: 30px;
     border-style: solid;
+    margin-top: 10px;
 }
 .h1{
     background-color: #d34e39cb;
@@ -74,6 +76,14 @@ footer{
 .redes{
     background-color: burlywood;
 }
+.logo__nosotros{
+    margin-bottom: 10px;
+    border-width: 5px;
+    border-style: solid;
+    border-color:  rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 19%, rgba(121,9,41,1) 63%, rgba(0,212,255,1) 92%);;
+}
+
 @media (min-width:321px) {
     body{
         grid-template-columns: 1fr;
@@ -94,5 +104,3 @@ footer{
     }
     
 }
-
-

@@ -11,10 +11,6 @@ body{
     font-family:'Poppins';
     font-weight: bolder;
     text-align: center;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3,33,3%);
-    min-height: 100vh;
 }
 header{
     background-color: rgb(241, 241, 180);
@@ -24,58 +20,14 @@ header{
     height: 30px;
 }
 
-li{
-    list-style-type: none;
-    border: 3px solid #1F363D
-}
-
-a{
-    color: #521A11;
-    text-decoration: none;
-}
-
-h1{
-    font-size: 30px;
-    border-style: solid;
-    margin-top: 10px;
-}
-.h1{
+%bordo{
     background-color: #d34e39cb;
 }
 
-.carritoNav{
-    justify-content: flex-end;
-}
-h2{
-    border-style: solid;
-    padding: 5px;
-    margin: 10px;
-    background-color: #d34e39cb;
-}
-h3{
-    font-size: 17px;
-    font-weight: bold;
-    background-color: #ee644fcb;
-    padding: 3px;
-    margin: 6px;
-    border-style: dotted;
-}
-.conteinerProductos{
-    background-color: rgb(241, 241, 180);
-}
-.compra{
-    background-color: rgb(241, 241, 180);
-}
-.imgCompra{
-    width: 24px;
-    height: 24px;
-}
 footer{
     background-color: burlywood;
 }
-.redes{
-    background-color: burlywood;
-}
+
 .logo__nosotros{
     margin-bottom: 10px;
     border-width: 5px;
@@ -83,24 +35,9 @@ footer{
     border-color:  rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 19%, rgba(121,9,41,1) 63%, rgba(0,212,255,1) 92%);;
 }
-
-@media (min-width:321px) {
-    body{
-        grid-template-columns: 1fr;
-        grid-template-rows: 5% auto 7%;
-    }
-    .h1{
-        display: flex;
-        justify-content: space-between;
-    }
-    .productosDestacados{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    .redes{
-        display: flex;
-        justify-content: space-around;
-    }
-    
+.cadena{
+    width: 200px;
+    height: 400px;
 }
+
+
